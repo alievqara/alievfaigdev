@@ -1,11 +1,20 @@
 const en = {
   translation: {
     nav: {
-      work: "Work",
-      approach: "Approach",
-      contact: "Contact",
-      github: "GitHub",
-    },
+  work: "Work",
+  approach: "Approach",
+  contact: "Contact",
+  github: "GitHub",
+  linkedin: "LinkedIn",
+  instagram: "Instagram",
+  email: "Email",
+  whatsapp: "WhatsApp",
+  telegram: "Telegram",
+  language: "Language",
+  shortcuts: "Shortcuts",
+  openMenu: "Open menu",
+  closeMenu: "Close menu",
+},
 
     hero: {
       eyebrow: "Backend-focused full stack developer",
