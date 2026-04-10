@@ -878,7 +878,7 @@ section {
     border-top: 1px solid rgba(255, 255, 255, 0.05);
     transform: translateY(-16px);
     opacity: 0;
-    padding: 15px 15px 15px 40px;
+    padding: 15px 15px 50px 15px;
 
     transition:
       transform 0.25s ease,
