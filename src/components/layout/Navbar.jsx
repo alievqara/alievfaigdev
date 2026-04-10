@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import LanguageSwitcher from "./LanguageSwitcher";
+import MobileDrawer from "./MobileDrawer";
 
 function Navbar() {
   const { t } = useTranslation();
@@ -11,6 +12,7 @@ function Navbar() {
 
   useEffect(() => {
     document.body.style.overflow = isMobileMenuOpen ? "hidden" : "";
+
     return () => {
       document.body.style.overflow = "";
     };
@@ -38,12 +40,12 @@ function Navbar() {
             className="site-header__mobile-github"
             aria-label={t("nav.github")}
           >
-            GitHub
+            {t("nav.github")}
           </a>
         </div>
 
         <a href="#home" className="site-logo" onClick={closeMenu}>
-          alievfaig.dev
+          Aliev Faig
         </a>
 
         <div className="site-header__desktop-right">
@@ -71,7 +73,7 @@ function Navbar() {
           onClick={toggleMenu}
           aria-label={isMobileMenuOpen ? t("nav.closeMenu") : t("nav.openMenu")}
           aria-expanded={isMobileMenuOpen}
-          aria-controls="mobile-menu"
+          aria-controls="mobile-drawer"
         >
           <span />
           <span />
@@ -79,79 +81,7 @@ function Navbar() {
         </button>
       </div>
 
-      <div
-        id="mobile-menu"
-        className={`mobile-menu ${isMobileMenuOpen ? "is-open" : ""}`}
-      >
-        <div className="container mobile-menu__inner">
-          <nav className="mobile-menu__nav" aria-label="Mobile navigation">
-            <a href="#work" onClick={closeMenu}>
-              {t("nav.work")}
-            </a>
-            <a href="#about" onClick={closeMenu}>
-              {t("nav.approach")}
-            </a>
-            <a href="#contact" onClick={closeMenu}>
-              {t("nav.contact")}
-            </a>
-          </nav>
-
-          <div className="mobile-menu__section">
-            <p className="mobile-menu__section-title">{t("nav.language")}</p>
-            <LanguageSwitcher mobile />
-          </div>
-
-          <div className="mobile-menu__section">
-            <p className="mobile-menu__section-title">{t("nav.shortcuts")}</p>
-
-            <div className="mobile-menu__links">
-              <a
-                href="https://github.com/alievqara"
-                target="_blank"
-                rel="noreferrer"
-              >
-                {t("nav.github")}
-              </a>
-
-              <a
-                href="https://linkedin.com/in/your-linkedin"
-                target="_blank"
-                rel="noreferrer"
-              >
-                {t("nav.linkedin")}
-              </a>
-
-              <a
-                href="https://instagram.com/your-instagram"
-                target="_blank"
-                rel="noreferrer"
-              >
-                {t("nav.instagram")}
-              </a>
-
-              <a href="mailto:your@email.com">
-                {t("nav.email")}
-              </a>
-
-              <a
-                href="https://wa.me/994000000000"
-                target="_blank"
-                rel="noreferrer"
-              >
-                {t("nav.whatsapp")}
-              </a>
-
-              <a
-                href="https://t.me/yourtelegram"
-                target="_blank"
-                rel="noreferrer"
-              >
-                {t("nav.telegram")}
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
+      <MobileDrawer isOpen={isMobileMenuOpen} onClose={closeMenu} />
     </header>
   );
 }
