@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import LanguageSwitcher from "./LanguageSwitcher";
 import MobileDrawer from "./MobileDrawer";
+import { socialLinks } from "../../data/socialLinks";
 
 function Navbar() {
   const { t } = useTranslation();
@@ -34,7 +35,7 @@ function Navbar() {
       <div className="container site-header__inner">
         <div className="site-header__mobile-left">
           <a
-            href="https://github.com/alievqara"
+            href={socialLinks.github}
             target="_blank"
             rel="noreferrer"
             className="site-header__mobile-github"
@@ -58,7 +59,7 @@ function Navbar() {
           <LanguageSwitcher />
 
           <a
-            href="https://github.com/alievqara"
+            href={socialLinks.github}
             target="_blank"
             rel="noreferrer"
             className="site-header__cta"

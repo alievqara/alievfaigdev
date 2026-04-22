@@ -17,21 +17,26 @@ const en = {
     },
 
     hero: {
-      eyebrow: "Backend-focused full stack developer",
-      titleLine1: "Building scalable",
-      titleLine2: "SaaS systems with",
-      titleLine3: "clean architecture.",
+      eyebrow: "Full stack developer",
+
+      titleLine1: "I build systems",
+      titleLine2: "that look simple,",
+      titleLine3: "but work powerfully.",
+
       description:
-        "I build production-focused applications with ASP.NET Core and React, centered around maintainability, service boundaries, SOLID design, and long-term scalability.",
+        "My systems are fast, scalable, and built to last. I focus on creating products that are not just working, but well-structured and reliable.",
+
       primaryCta: "View Work",
       secondaryCta: "Contact Me",
-      featuredLabel: "Featured Project",
+
+      featuredLabel: "Project",
       featuredTitle: "Planzy",
-      featuredText: "Multi-tenant SaaS CRM/ERP reservation platform.",
-      stackLabel: "Core Stack",
-      focusLabel: "Engineering Focus",
+      featuredText: "Reservation and management system for businesses.",
+
+      stackLabel: "Technologies I use",
+      focusLabel: "My approach",
       focusText:
-        "Clean Architecture, maintainable code, SOLID principles, and scalable service boundaries.",
+        "I focus on building simple, clear systems that can grow over time.",
     },
 
     work: {

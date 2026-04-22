@@ -1000,3 +1000,39 @@ section {
     border-radius: 24px;
   }
 }
+
+
+.hero-panel {
+  will-change: transform, opacity;
+}
+
+.work-item,
+.stack-card,
+.feature-mock,
+.contact-cta__inner,
+.approach-points li {
+  will-change: transform, opacity;
+}
+
+.contact-cta__socials {
+  margin-top: 18px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.contact-cta__socials a {
+  padding: 10px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--text-soft);
+  transition: 0.2s ease;
+}
+
+.contact-cta__socials a:hover {
+  color: var(--text);
+  border-color: rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.05);
+}

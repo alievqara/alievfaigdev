@@ -17,21 +17,26 @@ const az = {
     },
 
     hero: {
-      eyebrow: "Backend yönümlü full stack developer",
-      titleLine1: "Təmiz memarlıqla",
-      titleLine2: "ölçək­lənə bilən",
-      titleLine3: "SaaS sistemləri qururam.",
+      eyebrow: "Full stack developer",
+
+      titleLine1: "Sadə görünən,",
+      titleLine2: "amma güclü işləyən",
+      titleLine3: "sistemlər qururam.",
+
       description:
-        "ASP.NET Core və React ilə production yönümlü tətbiqlər qururam. Fokusum maintainability, servis sərhədləri, SOLID prinsipləri və uzunmüddətli ölçəklənmədir.",
+        "Hazırladığım sistemlər sürətli işləyir, böyüyə bilir və uzun müddət problemsiz qalır. Məqsədim sadəcə işləyən deyil, düzgün qurulmuş məhsullar yaratmaqdır.",
+
       primaryCta: "Layihələrə bax",
       secondaryCta: "Əlaqə saxla",
-      featuredLabel: "Önə çıxan layihə",
+
+      featuredLabel: "Layihə",
       featuredTitle: "Planzy",
-      featuredText: "Multi-tenant SaaS CRM/ERP rezervasiya platforması.",
-      stackLabel: "Əsas stack",
-      focusLabel: "Mühəndislik fokusum",
+      featuredText: "Bizneslər üçün hazırlanmış rezervasiya və idarəetmə sistemi.",
+
+      stackLabel: "İstifadə etdiyim texnologiyalar",
+      focusLabel: "Mənim yanaşmam",
       focusText:
-        "Clean Architecture, maintainable code, SOLID prinsipləri və ölçəklənə bilən servis sərhədləri.",
+        "Sadə, aydın və gələcəkdə böyüməyə hazır sistemlər qurmağa fokuslanıram.",
     },
 
     work: {

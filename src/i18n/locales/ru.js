@@ -17,21 +17,26 @@ const ru = {
     },
 
     hero: {
-      eyebrow: "Full stack разработчик с фокусом на backend",
-      titleLine1: "Создаю масштабируемые",
-      titleLine2: "SaaS-системы с",
-      titleLine3: "чистой архитектурой.",
+      eyebrow: "Full stack разработчик",
+
+      titleLine1: "Создаю системы,",
+      titleLine2: "которые выглядят просто,",
+      titleLine3: "но работают мощно.",
+
       description:
-        "Я создаю production-ready приложения на ASP.NET Core и React, делая упор на поддерживаемость, границы сервисов, SOLID и долгосрочную масштабируемость.",
+        "Мои системы быстрые, масштабируемые и надежные. Я создаю не просто рабочие решения, а грамотно построенные продукты.",
+
       primaryCta: "Смотреть проекты",
       secondaryCta: "Связаться",
-      featuredLabel: "Ключевой проект",
+
+      featuredLabel: "Проект",
       featuredTitle: "Planzy",
-      featuredText: "Мультитенантная SaaS CRM/ERP платформа для бронирования.",
-      stackLabel: "Основной стек",
-      focusLabel: "Инженерный фокус",
+      featuredText: "Система бронирования и управления для бизнеса.",
+
+      stackLabel: "Технологии",
+      focusLabel: "Мой подход",
       focusText:
-        "Clean Architecture, поддерживаемый код, принципы SOLID и масштабируемые границы сервисов.",
+        "Фокус на простых, понятных и масштабируемых системах.",
     },
 
     work: {
