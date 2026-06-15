@@ -104,23 +104,40 @@ const az = {
     },
 
     featuredPlanzy: {
-      eyebrow: "Önə çıxan layihə",
-      title: "Planzy",
-      p1: "Planzy biznes onboarding, company management və appointment flow-ları üçün hazırlanmış multi-tenant SaaS CRM/ERP rezervasiya sistemidir.",
-      p2: "Platforma backend ölçəklənməsi nəzərə alınaraq, aydın servis sərhədləri və uzunmüddətli inkişafı dəstəkləyən memarlıqla qurulur.",
-      points: [
-        "JWT authentication və refresh token flow",
-        "Biznes onboarding və company setup",
-        "Microservice yönümlü servis ayrımı",
-        "Modul strukturlu React + Vite frontend",
-      ],
-      mock: [
-        "Auth & access flow",
-        "Onboarding journey",
-        "Company management modules",
-        "Appointment workflow",
-      ],
+  eyebrow: "Önə çıxan layihə",
+  title: "Planzy",
+  p1: "Planzy kiçik və orta bizneslər üçün hazırlanmış CRM/ERP və rezervasiya sistemidir.",
+  p2: "Layihədə məqsəd bizneslərin müştərilərini, rezervasiyalarını, şirkət məlumatlarını və gündəlik iş axınlarını daha rahat idarə etməsidir.",
+  points: [
+    "İstifadəçi qeydiyyatı və giriş sistemi",
+    "Biznes onboarding və company setup",
+    "Rezervasiya və appointment flow-ları",
+    "Modul React frontend və ASP.NET Core backend",
+  ],
+  mock: [
+    "Auth & access flow",
+    "Company management",
+    "Reservation workflow",
+    "Customer operations",
+  ],
+  details: [
+    {
+      label: "Problem",
+      title: "Bizneslər üçün qarışıq idarəetməni sadələşdirmək",
+      text: "Bir çox kiçik biznes müştəri, rezervasiya və daxili məlumatları ayrı-ayrı yerlərdə saxlayır. Planzy bu prosesləri bir sistemdə toplamaq üçün hazırlanır.",
     },
+    {
+      label: "Solution",
+      title: "Tək platformada idarəetmə",
+      text: "Sistem company setup, istifadəçi idarəetməsi, rezervasiya axını və müştəri məlumatlarını vahid məhsul içində birləşdirir.",
+    },
+    {
+      label: "Architecture",
+      title: "Gələcək böyüməyə hazır struktur",
+      text: "Layihə servis sərhədləri, JWT authentication, modular frontend və maintainable backend yanaşması ilə qurulur.",
+    },
+  ],
+},
 
     contact: {
       title: "Gəlin düzgün ölçəklənə bilən bir sistem quraq.",
@@ -132,7 +149,6 @@ const az = {
 
     footer: {
       left: "© 2026 Aliev Faig",
-      right: "React + Vite ilə hazırlanıb",
     },
 
     languages: {

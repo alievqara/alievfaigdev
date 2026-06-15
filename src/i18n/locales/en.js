@@ -104,23 +104,40 @@ const en = {
     },
 
     featuredPlanzy: {
-      eyebrow: "Featured project",
-      title: "Planzy",
-      p1: "Planzy is a multi-tenant SaaS CRM/ERP reservation system designed for business onboarding, company management, and appointment flows.",
-      p2: "The platform is being built with backend scalability in mind, using clear service boundaries and architecture that supports long-term extension.",
-      points: [
-        "JWT authentication and refresh token flow",
-        "Business onboarding and company setup",
-        "Microservice-oriented service separation",
-        "React + Vite frontend with modular structure",
-      ],
-      mock: [
-        "Auth & access flow",
-        "Onboarding journey",
-        "Company management modules",
-        "Appointment workflow",
-      ],
+  eyebrow: "Featured project",
+  title: "Planzy",
+  p1: "Planzy is a CRM/ERP and reservation system built for small and medium businesses.",
+  p2: "The goal is to help businesses manage customers, reservations, company data, and daily workflows in one clear system.",
+  points: [
+    "User registration and authentication",
+    "Business onboarding and company setup",
+    "Reservation and appointment workflows",
+    "Modular React frontend and ASP.NET Core backend",
+  ],
+  mock: [
+    "Auth & access flow",
+    "Company management",
+    "Reservation workflow",
+    "Customer operations",
+  ],
+  details: [
+    {
+      label: "Problem",
+      title: "Making business management less chaotic",
+      text: "Many small businesses keep customer data, reservations, and internal processes in separate tools. Planzy is designed to bring these workflows into one system.",
     },
+    {
+      label: "Solution",
+      title: "One platform for daily operations",
+      text: "The system connects company setup, user management, reservation flows, and customer data inside a single product experience.",
+    },
+    {
+      label: "Architecture",
+      title: "Built to grow over time",
+      text: "The project is structured around service boundaries, JWT authentication, modular frontend code, and a maintainable backend approach.",
+    },
+  ],
+},
 
     contact: {
       title: "Let’s build something that can scale properly.",
@@ -132,7 +149,6 @@ const en = {
 
     footer: {
       left: "© 2026 Aliev Faig",
-      right: "Built with React + Vite",
     },
 
     languages: {
