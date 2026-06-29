@@ -1,9 +1,11 @@
 import { useTranslation } from "react-i18next";
 import Reveal from "../common/Reveal";
-import { works } from "../../data/work";
+import ProjectGroup from "../projects/ProjectGroup";
+import { projectService } from "../../services/projectService";
 
 function SelectedWork() {
   const { t } = useTranslation();
+  const groups = projectService.getGroupedProjects();
 
   return (
     <section id="work">
@@ -15,38 +17,14 @@ function SelectedWork() {
           </div>
         </Reveal>
 
-        <div className="work-list">
-          {works.map((item, index) => (
-            <Reveal key={item.index} delay={index * 0.06}>
-              <article className="work-item">
-                <div className="work-item__meta">
-                  <span>{item.index}</span>
-                  <span>{item.category}</span>
-                </div>
-
-                <div className="work-item__content">
-                  <h3>{item.title}</h3>
-                  <p>{item.description}</p>
-
-                  <div className="work-item__tags">
-                    {item.tags.map((tag) => (
-                      <span key={tag}>{tag}</span>
-                    ))}
-                  </div>
-
-                  {item.githubUrl && (
-                    <a
-                      href={item.githubUrl}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="work-item__link"
-                    >
-                      View project →
-                    </a>
-                  )}
-                </div>
-              </article>
-            </Reveal>
+        <div className="project-groups">
+          {groups.map(({ category, projects }) => (
+            <ProjectGroup
+              key={category.id}
+              titleKey={category.titleKey}
+              projects={projects}
+              compact={category.id === "landing" || category.id === "labs"}
+            />
           ))}
         </div>
       </div>

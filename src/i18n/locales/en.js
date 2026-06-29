@@ -139,6 +139,17 @@ const en = {
   ],
 },
 
+projects: {
+  categories: {
+    featured: "Featured Projects",
+    backend: "Backend / SaaS",
+    telegram: "Telegram Bots & Mini Apps",
+    tools: "Tools & Utilities",
+    landing: "Commercial UI / Landing Pages",
+    labs: "Labs / Experiments",
+  },
+},
+
     contact: {
       title: "Let’s build something that can scale properly.",
       text:

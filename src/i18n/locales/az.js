@@ -139,6 +139,17 @@ const az = {
   ],
 },
 
+projects: {
+  categories: {
+    featured: "Önə çıxan layihələr",
+    backend: "Backend / SaaS",
+    telegram: "Telegram botlar və mini app-lər",
+    tools: "Tools və utility layihələr",
+    landing: "Commercial UI / Landing Pages",
+    labs: "Labs / Experiments",
+  },
+},
+
     contact: {
       title: "Gəlin düzgün ölçəklənə bilən bir sistem quraq.",
       text:
@@ -150,6 +161,8 @@ const az = {
     footer: {
       left: "© 2026 Aliev Faig",
     },
+
+    
 
     languages: {
       az: "AZ",

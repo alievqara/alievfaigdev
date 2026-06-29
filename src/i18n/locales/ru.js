@@ -139,6 +139,17 @@ const ru = {
   ],
 },
 
+projects: {
+  categories: {
+    featured: "Ключевые проекты",
+    backend: "Backend / SaaS",
+    telegram: "Telegram-боты и mini apps",
+    tools: "Инструменты и утилиты",
+    landing: "Commercial UI / Landing Pages",
+    labs: "Labs / Experiments",
+  },
+},
+
     contact: {
       title: "Давайте создавать системы, которые умеют масштабироваться.",
       text:
